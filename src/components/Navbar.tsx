@@ -71,26 +71,28 @@ export default function Navbar() {
         </ul>
 
         {/* CTA */}
-        <button onClick={() => scrollTo('contact')} style={{
-          background: '#8C7462', color: '#ffffff',
-          border: '1px solid #8C7462', padding: '10px 26px',
+        <a href="tel:+919876543210" style={{
+          background: '#B4914F', color: '#ffffff',
+          border: '1px solid #B4914F', padding: '10px 26px',
           borderRadius: '30px', cursor: 'pointer',
           fontFamily: "'Inter', sans-serif",
           fontSize: '0.8rem', fontWeight: 500,
           letterSpacing: '1px', textTransform: 'uppercase',
+          textDecoration: 'none',
+          display: 'inline-block',
           transition: 'all 0.3s',
         }}
           className="nav-cta"
           onMouseEnter={e => {
             e.currentTarget.style.background = '#ffffff'
-            e.currentTarget.style.color = '#8C7462'
+            e.currentTarget.style.color = '#B4914F'
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.background = '#8C7462'
+            e.currentTarget.style.background = '#B4914F'
             e.currentTarget.style.color = '#ffffff'
           }}>
-          Book a Visit
-        </button>
+          Call Now
+        </a>
 
         {/* Mobile hamburger and Quick Contact icons */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
@@ -104,18 +106,6 @@ export default function Navbar() {
                   height: '28px',
                   objectFit: 'contain',
                   transform: 'translate(-20px, -2px) scale(2.70)'
-                }}
-              />
-            </a>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" style={{ transition: 'all 0.3s', display: 'flex', alignItems: 'center' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
-              <img
-                src="/whatsapp.png"
-                alt="WhatsApp"
-                style={{
-                  width: '30px',
-                  height: '30px',
-                  objectFit: 'contain',
-                  transform: 'translate(0px, 0px) scale(3.2)'
                 }}
               />
             </a>

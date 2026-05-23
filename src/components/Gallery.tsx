@@ -4,42 +4,42 @@ import { X } from 'lucide-react'
 
 const galleryImages = [
   {
-    src: '/kayal_nila_lawn_1777883954145.png',
+    src: '/_TAR0360.jpg',
     title: 'The Nila Lawn',
     desc: 'Sprawling greenery under a starlit canopy.',
     colSpan: 'span 2',
     rowSpan: 'span 2'
   },
   {
-    src: '/kayal_hero_cinematic_1777883816287.png',
+    src: '/_TAR0369.jpg',
     title: 'Cinematic Vista',
     desc: 'A breathtaking aerial perspective of our oasis.',
     colSpan: 'span 2',
     rowSpan: 'span 1'
   },
   {
-    src: '/kayal_vizhi_hall_1777884002106.png',
+    src: '/image2.jpg',
     title: 'The Vizhi Hall',
     desc: 'Modern luxury meets timeless tradition.',
     colSpan: 'span 1',
     rowSpan: 'span 1'
   },
   {
-    src: '/kayal_gallery_collage_1777884529832.png',
+    src: '/image3.jpg',
     title: 'Artful Details',
     desc: 'Every corner crafted with meticulous precision.',
     colSpan: 'span 1',
     rowSpan: 'span 1'
   },
   {
-    src: '/clouddyyy.png',
+    src: '/_TAR0361.jpg',
     title: 'Ethereal Skies',
     desc: 'Dramatic clouds framing your perfect moments.',
     colSpan: 'span 2',
     rowSpan: 'span 1'
   },
   {
-    src: '/kayal_isai_space_1777884108080.png',
+    src: '/_TAR0363.jpg',
     title: 'The Isai Space',
     desc: 'Where melodies echo through the soul.',
     colSpan: 'span 2',
@@ -62,7 +62,7 @@ export default function Gallery() {
         <Reveal>
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <span style={{
-              color: '#8C7462', textTransform: 'uppercase',
+              color: '#B4914F', textTransform: 'uppercase',
               letterSpacing: '4px', fontSize: '0.7rem',
               fontFamily: "'Inter', sans-serif",
               display: 'block', marginBottom: '12px',
@@ -132,7 +132,7 @@ export default function Gallery() {
                     {/* Lighting/Glow Effect */}
                     <div style={{
                       position: 'absolute', inset: 0,
-                      background: `radial-gradient(circle at 50% 120%, rgba(140, 116, 98, 0.3) 0%, transparent 60%)`,
+                      background: `radial-gradient(circle at 50% 120%, rgba(180, 145, 79, 0.3) 0%, transparent 60%)`,
                       opacity: hovered === i ? 1 : 0,
                       transition: 'opacity 0.8s ease',
                     }} />
@@ -161,7 +161,7 @@ export default function Gallery() {
                           {img.title}
                           <span style={{ 
                             width: '6px', height: '6px', borderRadius: '50%', 
-                            background: '#8C7462',
+                            background: '#B4914F',
                             opacity: hovered === i ? 1 : 0,
                             transform: hovered === i ? 'scale(1)' : 'scale(0)',
                             transition: 'all 0.4s ease'
@@ -211,7 +211,7 @@ export default function Gallery() {
             </p>
             <p style={{
               fontFamily: "'Playfair Display', serif",
-              fontStyle: 'italic', color: '#8C7462', fontSize: '0.9rem',
+              fontStyle: 'italic', color: '#B4914F', fontSize: '0.9rem',
             }}>
               Curated with love for your moments
             </p>
@@ -238,7 +238,7 @@ export default function Gallery() {
             style={{
               maxWidth: '95vw', maxHeight: '90vh',
               objectFit: 'contain', borderRadius: '12px',
-              boxShadow: '0 0 100px rgba(140, 116, 98, 0.2)',
+              boxShadow: '0 0 100px rgba(180, 145, 79, 0.2)',
               cursor: 'default',
             }}
           />
@@ -255,7 +255,7 @@ export default function Gallery() {
               transition: 'all 0.3s',
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.background = '#8C7462'
+              e.currentTarget.style.background = '#B4914F'
               e.currentTarget.style.transform = 'rotate(90deg)'
             }}
             onMouseLeave={e => {
@@ -270,7 +270,7 @@ export default function Gallery() {
 
       <style>{`
         .bento-card:hover {
-          border-color: rgba(140, 116, 98, 0.4) !important;
+          border-color: rgba(180, 145, 79, 0.4) !important;
           box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
         @media (max-width: 900px) {

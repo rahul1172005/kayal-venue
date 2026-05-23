@@ -70,7 +70,7 @@ export default function Contact() {
       <div style={{
         position: 'absolute', top: '-10%', right: '-5%',
         width: '400px', height: '400px',
-        background: 'radial-gradient(circle, rgba(140, 116, 98, 0.03) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(180, 145, 79, 0.03) 0%, transparent 70%)',
         zIndex: 0
       }} />
 
@@ -78,7 +78,7 @@ export default function Contact() {
         <Reveal>
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <span style={{
-              color: '#8C7462', textTransform: 'uppercase',
+              color: '#B4914F', textTransform: 'uppercase',
               letterSpacing: '4px', fontSize: '0.75rem',
               fontFamily: "'Inter', sans-serif",
               display: 'block', marginBottom: '16px',
@@ -94,7 +94,7 @@ export default function Contact() {
             }}>
               Let’s Craft Your <span style={{ fontStyle: 'italic' }}>Legend</span>
             </h2>
-            <div style={{ width: '60px', height: '2px', background: '#8C7462', margin: '0 auto 24px' }} />
+            <div style={{ width: '60px', height: '2px', background: '#B4914F', margin: '0 auto 24px' }} />
             <p style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '1.1rem', color: '#444444',
@@ -132,8 +132,8 @@ export default function Contact() {
                   alignItems: 'flex-start',
                 }}>
                   <div style={{ 
-                    color: '#8C7462', 
-                    background: 'rgba(140, 116, 98, 0.08)',
+                    color: '#B4914F', 
+                    background: 'rgba(180, 145, 79, 0.08)',
                     padding: '12px',
                     borderRadius: '12px',
                     display: 'flex',
@@ -291,9 +291,9 @@ export default function Contact() {
                   boxShadow: '0 10px 20px rgba(0,0,0,0.1)'
                 }}
                 onMouseEnter={e => { 
-                  e.currentTarget.style.background = '#8C7462'
+                  e.currentTarget.style.background = '#B4914F'
                   e.currentTarget.style.transform = 'translateY(-2px)'
-                  e.currentTarget.style.boxShadow = '0 15px 30px rgba(140, 116, 98, 0.25)'
+                  e.currentTarget.style.boxShadow = '0 15px 30px rgba(180, 145, 79, 0.25)'
                 }}
                 onMouseLeave={e => { 
                   e.currentTarget.style.background = '#1a1a1a'

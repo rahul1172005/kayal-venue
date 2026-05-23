@@ -76,7 +76,7 @@ export default function Testimonials() {
             {/* Stars */}
             <div style={{ marginBottom: '24px', display: 'flex', justifyContent: 'center', gap: '4px' }}>
               {Array.from({ length: t.stars }).map((_, i) => (
-                <Star key={i} size={18} fill="#8C7462" color="#8C7462" />
+                <Star key={i} size={18} fill="#B4914F" color="#B4914F" />
               ))}
             </div>
 
@@ -116,13 +116,13 @@ export default function Testimonials() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', marginTop: '50px' }}>
             <button onClick={prev} style={{
               width: '44px', height: '44px', borderRadius: '50%',
-              border: '1px solid #8C7462',
-              background: 'transparent', color: '#8C7462',
+              border: '1px solid #B4914F',
+              background: 'transparent', color: '#B4914F',
               fontSize: '1.1rem', cursor: 'pointer',
               transition: 'all 0.3s',
             }}
-            onMouseEnter={e => { e.currentTarget.style.background = '#8C7462'; e.currentTarget.style.color = '#fff' }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#8C7462' }}>
+            onMouseEnter={e => { e.currentTarget.style.background = '#B4914F'; e.currentTarget.style.color = '#fff' }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#B4914F' }}>
               <ChevronLeft size={20} />
             </button>
             <div style={{ display: 'flex', gap: '8px' }}>
@@ -131,7 +131,7 @@ export default function Testimonials() {
                   width: i === active ? '28px' : '8px',
                   height: '8px',
                   borderRadius: '4px',
-                  background: i === active ? '#8C7462' : '#dddddd',
+                  background: i === active ? '#B4914F' : '#dddddd',
                   border: 'none', cursor: 'pointer',
                   transition: 'all 0.4s ease',
                   padding: 0,
@@ -140,13 +140,13 @@ export default function Testimonials() {
             </div>
             <button onClick={next} style={{
               width: '44px', height: '44px', borderRadius: '50%',
-              border: '1px solid #8C7462',
-              background: 'transparent', color: '#8C7462',
+              border: '1px solid #B4914F',
+              background: 'transparent', color: '#B4914F',
               fontSize: '1.1rem', cursor: 'pointer',
               transition: 'all 0.3s',
             }}
-            onMouseEnter={e => { e.currentTarget.style.background = '#8C7462'; e.currentTarget.style.color = '#fff' }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#8C7462' }}>
+            onMouseEnter={e => { e.currentTarget.style.background = '#B4914F'; e.currentTarget.style.color = '#fff' }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#B4914F' }}>
               <ChevronRight size={20} />
             </button>
           </div>

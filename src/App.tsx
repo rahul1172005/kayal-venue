@@ -122,10 +122,10 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Spaces />
         <Services />
         <Experience />
         <Gallery />
+        <Spaces />
         <Testimonials />
         <CTABanner />
         <Contact />

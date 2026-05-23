@@ -28,7 +28,7 @@ const services = [
 export default function Services() {
   const [hovered, setHovered] = useState<number | null>(null)
   
-  const littleBrown = '#8C7462'
+  const littleBrown = '#B4914F'
   const lightBrown = '#FDFBF9'
 
   return (
@@ -75,7 +75,7 @@ export default function Services() {
                   textAlign: 'center',
                   transition: 'all 0.4s ease',
                   boxShadow: hovered === i
-                    ? '0 30px 60px rgba(140,116,98,0.2)'
+                    ? '0 30px 60px rgba(180,145,79,0.2)'
                     : '0 8px 30px rgba(0,0,0,0.03)',
                   transform: hovered === i ? 'translateY(-10px)' : 'translateY(0)',
                   cursor: 'default',

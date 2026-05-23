@@ -29,7 +29,7 @@ export default function Footer() {
         position: 'absolute', bottom: '-10%', left: '50%',
         transform: 'translateX(-50%)',
         width: '600px', height: '400px',
-        background: 'radial-gradient(circle, rgba(140, 116, 98, 0.03) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(180, 145, 79, 0.03) 0%, transparent 70%)',
         zIndex: 0,
         pointerEvents: 'none'
       }} />
@@ -62,7 +62,7 @@ export default function Footer() {
                 fontSize: '0.85rem',
                 letterSpacing: '5px',
                 textTransform: 'uppercase',
-                color: '#8C7462',
+                color: '#B4914F',
                 fontWeight: 600,
                 margin: 0
               }}>
@@ -95,7 +95,7 @@ export default function Footer() {
                       fontSize: '0.9rem', color: '#1a1a1a', transition: 'color 0.3s',
                       fontFamily: "'Inter', sans-serif"
                     }}
-                    onMouseEnter={e => e.currentTarget.style.color = '#8C7462'}
+                    onMouseEnter={e => e.currentTarget.style.color = '#B4914F'}
                     onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}
                   >
                     {link}
@@ -111,7 +111,7 @@ export default function Footer() {
               <h4 className="footer-column-heading" style={{ fontSize: '0.7rem', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '32px', color: '#888888', fontWeight: 600 }}>Location</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', alignItems: 'center' }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', maxWidth: '240px' }}>
-                  <MapPin size={18} style={{ color: '#8C7462', flexShrink: 0, marginTop: '2px' }} />
+                  <MapPin size={18} style={{ color: '#B4914F', flexShrink: 0, marginTop: '2px' }} />
                   <span style={{ fontSize: '0.9rem', lineHeight: 1.6, color: '#1a1a1a' }}>
                     Avinashi Road, Coimbatore<br />
                     Tamil Nadu – 641 014
@@ -126,11 +126,11 @@ export default function Footer() {
             <div>
               <h4 className="footer-column-heading" style={{ fontSize: '0.7rem', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '32px', color: '#888888', fontWeight: 600 }}>Connect</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                <a href="tel:+919876543210" style={{ color: '#1a1a1a', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = '#8C7462'} onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}>
-                  <Phone size={16} style={{ color: '#8C7462' }} /> +91 98765 43210
+                <a href="tel:+919876543210" style={{ color: '#1a1a1a', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = '#B4914F'} onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}>
+                  <Phone size={16} style={{ color: '#B4914F' }} /> +91 98765 43210
                 </a>
-                <a href="mailto:hello@kayalvenue.com" style={{ color: '#1a1a1a', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = '#8C7462'} onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}>
-                  <Mail size={16} style={{ color: '#8C7462' }} /> hello@kayalvenue.com
+                <a href="mailto:hello@kayalvenue.com" style={{ color: '#1a1a1a', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = '#B4914F'} onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}>
+                  <Mail size={16} style={{ color: '#B4914F' }} /> hello@kayalvenue.com
                 </a>
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={socialIconStyle}
-                    onMouseEnter={e => (e.currentTarget.style.opacity = '1', e.currentTarget.style.color = '#8C7462')}
+                    onMouseEnter={e => (e.currentTarget.style.opacity = '1', e.currentTarget.style.color = '#B4914F')}
                     onMouseLeave={e => (e.currentTarget.style.opacity = '0.6', e.currentTarget.style.color = '#000000')}
                   >
                     {social.icon}
@@ -192,7 +192,7 @@ export default function Footer() {
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.borderColor = '#1a1a1a'
-                  e.currentTarget.style.color = '#8C7462'
+                  e.currentTarget.style.color = '#B4914F'
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.borderColor = 'rgba(0,0,0,0.1)'

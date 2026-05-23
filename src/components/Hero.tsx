@@ -93,7 +93,7 @@ export default function Hero() {
             transition: 'transform 0.6s ease',
           }}
         >
-          The Kayal Venue
+          Kayal
         </h1>
 
 
@@ -103,15 +103,15 @@ export default function Hero() {
           style={{
             fontFamily: "'Playfair Display', serif",
             fontStyle: 'italic',
-            fontSize: 'clamp(1rem, 2.5vw, 1.3rem)',
-            color: '#ffffffff',
+            fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
+            color: '#000000',
             marginBottom: '24px',
             marginTop: '10px', // Move just the subtitle and buttons down
             animation: 'fadeUp 1s ease 0.6s both',
 
           }}
         >
-
+          Your dream wedding deserves a dreamy setting.
         </p>
 
         <div
@@ -123,14 +123,14 @@ export default function Hero() {
             animation: 'fadeUp 1s ease 0.8s both',
           }}
         >
-          {/* Explore Spaces */}
-          <button
-            onClick={() => scrollTo('spaces')}
+          <a
+            href="tel:+919876543210"
             style={{
-              padding: '16px 44px',
-              background: '#8C7462',
+              display: 'inline-block',
+              padding: '16px 48px',
+              background: '#B4914F',
               color: '#ffffff',
-              border: '1px solid #8C7462',
+              border: '1px solid #B4914F',
               borderRadius: '30px',
               cursor: 'pointer',
               fontFamily: "'Inter', sans-serif",
@@ -138,45 +138,22 @@ export default function Hero() {
               fontWeight: 500,
               letterSpacing: '2px',
               textTransform: 'uppercase',
+              textDecoration: 'none',
               transition: 'all 0.35s ease',
             }}
-
+            onMouseEnter={e => {
+              e.currentTarget.style.background = 'transparent'
+              e.currentTarget.style.color = '#B4914F'
+              e.currentTarget.style.borderColor = '#B4914F'
+            }}
             onMouseLeave={e => {
-              e.currentTarget.style.background = '#8C7462'
+              e.currentTarget.style.background = '#B4914F'
               e.currentTarget.style.color = '#ffffff'
-              e.currentTarget.style.borderColor = '#8C7462'
+              e.currentTarget.style.borderColor = '#B4914F'
             }}
           >
-            Explore Spaces
-          </button>
-
-          {/* Book a Visit */}
-          <button
-            onClick={() => scrollTo('contact')}
-            style={{
-              padding: '16px 44px',
-              background: '#8C7462',
-              color: '#ffffff',
-              border: '1px solid #8C7462',
-              borderRadius: '30px',
-              cursor: 'pointer',
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '0.82rem',
-              fontWeight: 500,
-              letterSpacing: '2px',
-              textTransform: 'uppercase',
-              transition: 'all 0.35s ease',
-            }}
-
-            onMouseLeave={e => {
-              e.currentTarget.style.background = '#8C7462'
-              e.currentTarget.style.color = '#ffffff'
-              e.currentTarget.style.borderColor = '#8C7462'
-            }}
-
-          >
-            Book a Visit
-          </button>
+            Call Now
+          </a>
         </div>
       </div>
 

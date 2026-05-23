@@ -27,12 +27,38 @@ export default function About() {
             fontSize: 'clamp(2.2rem, 5vw, 3.5rem)',
             color: '#000000', marginBottom: '30px', lineHeight: 1.2,
           }}>
-            A Sanctuary Born for<br />Unforgettable Celebrations
+            Coimbatore’s most beautiful<br />outdoor wedding venue.
           </h2>
         </Reveal>
 
         <Reveal delay={0.2}>
           <div style={{ width: '60px', height: '1px', background: '#000000', margin: '0 auto 36px' }} />
+        </Reveal>
+
+        <Reveal delay={0.25}>
+          <div style={{
+            width: '100%',
+            maxWidth: '1000px',
+            margin: '0 auto 50px',
+            borderRadius: '24px',
+            overflow: 'hidden',
+            boxShadow: '0 20px 50px rgba(180, 145, 79, 0.15)',
+            background: '#000000',
+          }}>
+            <video
+              src="/video1.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                objectFit: 'cover',
+              }}
+            />
+          </div>
         </Reveal>
 
         <Reveal delay={0.3}>
@@ -64,8 +90,8 @@ export default function About() {
           <button
             onClick={() => document.getElementById('spaces')?.scrollIntoView({ behavior: 'smooth' })}
             style={{
-              background: 'transparent', color: '#8C7462',
-              border: '1px solid #8C7462', padding: '14px 40px',
+              background: 'transparent', color: '#B4914F',
+              border: '1px solid #B4914F', padding: '14px 40px',
               borderRadius: '30px', cursor: 'pointer',
               fontFamily: "'Inter', sans-serif",
               fontSize: '0.8rem', fontWeight: 500,
@@ -73,12 +99,12 @@ export default function About() {
               transition: 'all 0.35s ease',
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.background = '#8C7462'
+              e.currentTarget.style.background = '#B4914F'
               e.currentTarget.style.color = '#ffffff'
             }}
             onMouseLeave={e => {
               e.currentTarget.style.background = 'transparent'
-              e.currentTarget.style.color = '#8C7462'
+              e.currentTarget.style.color = '#B4914F'
             }}
           >
             Discover More
