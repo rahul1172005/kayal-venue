@@ -66,8 +66,9 @@ export default function ThankYouPage({ navigate }: ThankYouPageProps) {
               width: '80px', height: '80px', 
               background: 'rgba(180, 145, 79, 0.1)', 
               borderRadius: '50%', 
-              display: 'flex', alignItems: 'center', justify: 'center',
-              alignItems: 'center', justifyContent: 'center',
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
               margin: '0 auto 28px',
               color: brandGold
             }}>
