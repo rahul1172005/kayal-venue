@@ -26,6 +26,8 @@ export default function Hero() {
         loop
         muted
         playsInline
+        preload="auto"
+        poster="/preload.png"
         style={{
           position: 'absolute',
           top: 0,
