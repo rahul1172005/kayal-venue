@@ -22,7 +22,7 @@ import GalleryPage from './components/GalleryPage'
 function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Kayal%20The%20Venue."
+      href="https://wa.me/919443164565?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Kayal%20The%20Venue."
       target="_blank"
       rel="noopener noreferrer"
       title="Chat on WhatsApp"

@@ -26,7 +26,7 @@ export default function Contact({ navigate }: ContactProps) {
     e.preventDefault()
     // WhatsApp message
     const msg = `*Kayal Venue Enquiry*%0A%0A*Name:* ${form.name}%0A*Phone:* ${form.phone}%0A*Email:* ${form.email}`
-    window.open(`https://wa.me/919876543210?text=${msg}`, '_blank')
+    window.open(`https://wa.me/919443164565?text=${msg}`, '_blank')
     setForm({ name: '', email: '', phone: '' })
     navigate('/thank-you')
   }
@@ -120,10 +120,20 @@ export default function Contact({ navigate }: ContactProps) {
                 Contact Information
               </h3>
               {[
-                { icon: <MapPin size={20} />, label: 'Location', val: 'Kayal The Venue, Avinashi Road, Coimbatore, Tamil Nadu – 641 014' },
-                { icon: <Phone size={20} />, label: 'Inquiries', val: '+91 98765 43210' },
-                { icon: <Mail size={20} />, label: 'Email', val: 'hello@kayalvenue.com' },
-                { icon: <Clock size={20} />, label: 'Availability', val: 'Daily: 9:00 AM – 8:00 PM' },
+                {
+                  icon: <MapPin size={20} />,
+                  label: 'Location',
+                  val: (
+                    <>
+                      79, KNG Pudur,<br />
+                      GN Mills PO,<br />
+                      Coimbatore - 641029
+                    </>
+                  ) as React.ReactNode
+                },
+                { icon: <Phone size={20} />, label: 'Inquiries', val: '+91 94431 64565' as React.ReactNode },
+                { icon: <Mail size={20} />, label: 'Email', val: 'connectwithkayal@gmail.com' as React.ReactNode },
+                { icon: <Clock size={20} />, label: 'Availability', val: 'Daily: 9:00 AM – 6:00 PM' as React.ReactNode },
               ].map(item => (
                 <div key={item.label} style={{
                   display: 'flex', gap: '24px', marginBottom: '32px',
@@ -163,7 +173,7 @@ export default function Contact({ navigate }: ContactProps) {
               }}>
                 <iframe
                   title="Kayal Venue Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2653!2d76.9975!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDAxJzAwLjQiTiA3NsKwNTknNTEuMCJF!5e0!3m2!1sen!2sin!4v1683000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3915.645375698918!2d76.9263163!3d11.0651919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f72287998bf7%3A0xfb79f07a4977c6ab!2sKayal%2F%20Wedding%20Space%2FMarriage%20Hall%2FBanquet%20hall!5e0!3m2!1sen!2sin!4v1782140050071!5m2!1sen!2sin"
                   width="100%"
                   height="280"
                   style={{ border: 0 }}

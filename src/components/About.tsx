@@ -16,7 +16,7 @@ export default function About() {
             fontFamily: "'Inter', sans-serif",
             display: 'block', marginBottom: '16px',
           }}>
-            Our Story
+            Our Promise
           </span>
         </Reveal>
 
@@ -27,7 +27,7 @@ export default function About() {
             fontSize: 'clamp(2.2rem, 5vw, 3.5rem)',
             color: '#000000', marginBottom: '30px', lineHeight: 1.2,
           }}>
-            A stunning venue for private events.
+            A stunning venue for your special day.
           </h2>
         </Reveal>
 

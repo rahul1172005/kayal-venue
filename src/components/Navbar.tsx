@@ -131,7 +131,7 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
         </ul>
 
         {/* CTA */}
-        <a href="tel:+919876543210" style={{
+        <a href="tel:+919443164565" style={{
           background: '#B4914F', color: '#ffffff',
           border: '1px solid #B4914F', padding: '10px 26px',
           borderRadius: '30px', cursor: 'pointer',
@@ -156,8 +156,8 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
 
         {/* Mobile hamburger and Quick Contact icons */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-          <div className="nav-quick-contacts" style={{ display: 'flex', gap: '25px', marginRight: '15px', alignItems: 'center' }}>
-            <a href="tel:+919876543210" style={{ transition: 'all 0.3s', display: 'flex', alignItems: 'center' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
+          <div className="nav-quick-contacts" style={{ gap: '25px', marginRight: '15px', alignItems: 'center' }}>
+            <a href="tel:+919443164565" style={{ transition: 'all 0.3s', display: 'flex', alignItems: 'center' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
               <img
                 src="/call.png"
                 alt="Call"
@@ -167,7 +167,7 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
                   height: '28px',
                   objectFit: 'contain',
                   transform: 'translate(-20px, -2px) scale(2.70)',
-                  filter: isWhiteBgNavbar ? 'none' : 'brightness(0) invert(1)',
+                  filter: 'none',
                 }}
               />
             </a>
@@ -209,11 +209,17 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
       )}
 
       <style>{`
+        .nav-quick-contacts {
+          display: none !important;
+        }
         @media (max-width: 768px) {
           .nav-desktop { display: none !important; }
           .nav-cta { display: none !important; }
           .nav-hamburger { display: block !important; }
-          .nav-quick-contacts { margin-right: 0 !important; }
+          .nav-quick-contacts {
+            display: flex !important;
+            margin-right: 0 !important;
+          }
           .nav-call-img {
             transform: translate(0, 0) scale(1.6) !important;
           }

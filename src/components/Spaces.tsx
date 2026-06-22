@@ -5,33 +5,19 @@ import { Play, ChevronLeft, ChevronRight, X } from 'lucide-react'
 const videoTestimonials = [
   {
     id: 1,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-loving-couple-during-their-outdoor-wedding-43285-large.mp4',
-    title: 'Nila Lawn Reception',
-    couple: 'Ananya & Gautham',
+    url: '/2ndvid.MP4',
   },
   {
     id: 2,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-bride-and-groom-walking-in-a-garden-39908-large.mp4',
-    title: 'Garden Vows',
-    couple: 'Priyanka & Rahul',
+    url: '/1stvid.MP4',
   },
   {
     id: 3,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-newlyweds-walk-holding-hands-in-a-park-39905-large.mp4',
-    title: 'Sunset Portraits',
-    couple: 'Meera & Siddharth',
+    url: '/4thvid.MP4',
   },
   {
     id: 4,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-romantic-newlywed-couple-in-the-field-39906-large.mp4',
-    title: 'Amphitheatre Entrance',
-    couple: 'Shalini & Vikram',
-  },
-  {
-    id: 5,
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-bride-holding-flowers-and-walking-in-nature-43283-large.mp4',
-    title: 'Bridal Walkway',
-    couple: 'Deepika & Rohit',
+    url: '/3rdvid.MP4',
   }
 ]
 
@@ -42,27 +28,27 @@ const spaces = [
     id: 'nila',
     name: 'Kayal Nila',
     subtitle: 'Outdoor Lawn',
-    desc: 'Celebrate under a canopy of stars with fairy-lit trees, sprawling green lawns, and open air grandeur. Perfect for large weddings and reception evenings.',
-    img: '/_TAR0361.jpg',
-    capacity: 'Up to 2000 Guests',
+    desc: 'A versatile space featuring an open lawn that is boardered by vines and betel nut trees. It has a raised stage and a covered space for buffet set-up.',
+    img: '/nila.jpg',
+    capacity: 'Up to 1000 Guests',
     area: '50,000 sq.ft',
   },
   {
     id: 'vizhi',
     name: 'Kayal Vizhi',
     subtitle: 'Elegant Banquet Hall',
-    desc: 'An air-conditioned masterpiece of modern luxury. Crystal chandeliers, ivory draping, and bespoke decor create the perfect stage for your celebrations.',
-    img: '/_TAR0360.jpg',
-    capacity: 'Up to 800 Guests',
+    desc: 'An air-conditioned intimate space that can be hired for pre-wedding rituals, birthday celebrations, baby showers, naming ceremonies, wellness and corporate events, to name a few.',
+    img: '/vizhi.jpg',
+    capacity: 'Up to 200 Guests',
     area: '18,000 sq.ft',
   },
   {
     id: 'isai',
     name: 'Kayal Isai',
     subtitle: 'Performance Space',
-    desc: 'An intimate amphitheatre surrounded by bamboo groves and water features. The soul of the venue — designed for music, dance, and artistic expressions.',
-    img: '/image2.jpg',
-    capacity: 'Up to 400 Guests',
+    desc: 'A 3-bedroom house that can be used by the bride, groom and their families. In addition, our other accommodation (Kayal Aruvi) can host 8 guests in two bedrooms. All rooms are air-conditioned with attached bathrooms.',
+    img: '/isai.jpg',
+    capacity: 'Up to 24 Guests',
     area: '8,000 sq.ft',
   },
 ]
@@ -85,7 +71,7 @@ export default function Spaces() {
 
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
     const el = e.currentTarget
-    const setWidth = 5 * 304 // 1520px
+    const setWidth = videoTestimonials.length * 304
     const currentScroll = el.scrollLeft
 
     if (currentScroll >= setWidth * 2) {
@@ -98,7 +84,7 @@ export default function Spaces() {
   React.useEffect(() => {
     const el = document.getElementById('video-scroll-track')
     if (el) {
-      el.scrollLeft = 5 * 304 // Start at the beginning of the second set (1520px)
+      el.scrollLeft = videoTestimonials.length * 304
     }
 
     const interval = setInterval(() => {
@@ -121,7 +107,7 @@ export default function Spaces() {
               fontFamily: "'Inter', sans-serif",
               display: 'block', marginBottom: '16px',
             }}>
-              Our Spaces
+              Creating memories
             </span>
             <h2 style={{
               fontFamily: "'Playfair Display', serif",
@@ -229,41 +215,6 @@ export default function Spaces() {
                   }}
                 >
                   <Play size={10} fill="currentColor" /> Play
-                </div>
-
-                <div
-                  style={{
-                    position: 'absolute',
-                    bottom: '72px',
-                    left: '20px',
-                    right: '20px',
-                    zIndex: 2,
-                    textAlign: 'left',
-                  }}
-                >
-                  <h4
-                    style={{
-                      fontFamily: "'Playfair Display', serif",
-                      fontStyle: 'italic',
-                      fontSize: '1.25rem',
-                      color: '#ffffff',
-                      marginBottom: '4px',
-                      textShadow: '0 2px 4px rgba(0,0,0,0.5)',
-                    }}
-                  >
-                    {video.couple}
-                  </h4>
-                  <p
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      fontSize: '0.72rem',
-                      color: 'rgba(255, 255, 255, 0.8)',
-                      margin: 0,
-                      lineHeight: 1.4,
-                    }}
-                  >
-                    {video.title}
-                  </p>
                 </div>
               </div>
             ))}
@@ -418,7 +369,7 @@ export default function Spaces() {
                     gridTemplateRows: hovered === space.id ? '1fr' : '0fr',
                     transition: 'grid-template-rows 0.5s cubic-bezier(0.25, 1, 0.5, 1)',
                   }}>
-                    <div style={{ 
+                    <div style={{
                       overflow: 'hidden',
                       opacity: hovered === space.id ? 1 : 0,
                       transition: 'opacity 0.4s ease 0.1s',
@@ -473,13 +424,14 @@ export default function Spaces() {
           <div
             onClick={e => e.stopPropagation()}
             style={{
-              width: '90%',
-              maxWidth: '400px',
-              height: '80vh',
+              width: '95%',
+              maxWidth: '1100px',
+              aspectRatio: '16/9',
+              maxHeight: '85vh',
               position: 'relative',
-              borderRadius: '24px',
+              borderRadius: '16px',
               overflow: 'hidden',
-              boxShadow: '0 20px 80px rgba(180, 145, 79, 0.35)',
+              boxShadow: '0 20px 80px rgba(0, 0, 0, 0.5)',
               background: '#000',
             }}
           >
@@ -492,7 +444,7 @@ export default function Spaces() {
               style={{
                 width: '100%',
                 height: '100%',
-                objectFit: 'cover',
+                objectFit: 'contain',
               }}
             />
             <button

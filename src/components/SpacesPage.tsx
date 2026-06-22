@@ -19,46 +19,46 @@ export default function SpacesPage({ navigate }: SpacesPageProps) {
       capacity: '1,000 Seating / 2,000 Guests Total',
       area: '50,000 sq.ft',
       features: ['Betel nut tree borders', 'Raised built-in stage', 'Covered buffet space', 'Bridal walkway access'],
-      img: '/_TAR0361.jpg',
+      img: '/nila.jpg',
     },
     {
       id: 'vizhi',
       name: 'Kayal Vizhi',
       subtitle: 'Elegant Air-Conditioned Banquet Hall',
-      desc: 'An architectural masterpiece featuring crystal chandeliers, luxury ivory draping, and a serene signature water feature. Perfectly suited for elegant pre-wedding rituals, receptions, birthday celebrations, baby showers, and health programs.',
-      capacity: 'Up to 800 Guests (200 for intimate functions)',
+      desc: "A captivating space inspired by a bride's eye & accentuated by a water feature. Kayal Vizhi is an intimate air-conditioned space that can be hired for pre-wedding rituals, birthday celebrations, baby showers, naming ceremonies, wellness and corporate events, to name a few.",
+      capacity: 'Up to 200 Guests',
       area: '18,000 sq.ft',
       features: ['Fully Air-Conditioned', 'Indoor water feature', 'Crystal chandeliers', 'Custom mood lighting'],
-      img: '/_TAR0360.jpg',
+      img: '/vizhi.jpg',
     },
     {
       id: 'isai',
       name: 'Kayal Isai',
-      subtitle: 'Performance Amphitheatre',
-      desc: 'An intimate amphitheatre surrounded by dense bamboo groves and flowing water features. Designed as the cultural heart of Kayal, it is perfect for classical dance (arangetrams), musical concerts (katcheris), drama, art exhibits, and intimate wedding vows.',
-      capacity: 'Up to 400 Guests',
+      subtitle: 'Three-Bedroom Family House',
+      desc: 'Kayal Isai is a three bedroom house that can be used by the bride, groom and their families. Kayal Isai can accommodate 16 guests.\n\nIn addition, Kayal Aruvi can accommodate 8 guests. All rooms are air conditioned with attached bathrooms.',
+      capacity: 'Up to 24 Guests (Total)',
       area: '8,000 sq.ft',
-      features: ['Natural acoustic landscape', 'Bamboo grove backdrop', 'Water features', 'Bespoke event stage'],
-      img: '/image2.jpg',
+      features: ['Three AC Bedrooms', 'Attached bathrooms', 'Kayal Aruvi Guest House', 'Accommodates up to 24 guests'],
+      img: '/isai.jpg',
     },
   ]
 
   const accommodations = [
     {
-      name: 'Kayal Isai Villa',
+      name: 'Kayal Isai',
       type: 'Three-Bedroom Family House',
       desc: 'A spacious and luxurious three-bedroom estate designed specifically for the bridal couple, groom, and their immediate families. Offers private chambers for prep, relaxation, and intimate family gatherings.',
       capacity: 'Accommodates up to 16 guests',
       facilities: ['Three massive AC Bedrooms', 'Attached luxury bathrooms', 'Lounge and makeup areas', 'Private garden view'],
-      img: '/image2.jpg', // Reusing premium image path
+      img: '/isai.jpg', // Reusing premium image path
     },
     {
       name: 'Kayal Aruvi',
       type: 'Executive Guest House',
-      desc: 'A quiet, modern guest lodge located near the amphitheatre, offering serene privacy and exceptional comfort for out-of-town guests and close family members.',
+      desc: 'A quiet, modern guest lodge offering exceptional comfort for out-of-town guests and close family members. It has two bedrooms with four single beds in each.',
       capacity: 'Accommodates up to 8 guests',
       facilities: ['Fully Air-conditioned rooms', 'Attached modern bathrooms', 'High-end linens and amenities', 'Close proximity to lawn'],
-      img: '/_TAR0361.jpg',
+      img: '/Kayal Aruvi.jpeg',
     },
   ]
 
