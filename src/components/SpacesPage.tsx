@@ -116,7 +116,7 @@ export default function SpacesPage({ navigate }: SpacesPageProps) {
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <Reveal>
             <span style={{ color: brandGold, letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.75rem', fontFamily: "'Inter', sans-serif", fontWeight: 600 }}>The Estate</span>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '2.5rem', marginTop: '12px', marginBottom: '24px' }}>Where Nature & Luxury Harmonize</h2>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(1.9rem, 5vw, 2.5rem)', marginTop: '12px', marginBottom: '24px' }}>Where Nature & Luxury Harmonize</h2>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1rem', lineHeight: 1.8, color: '#555555' }}>
               Spanning across two meticulously curated acres, Kayal features a diverse mix of outdoor lawn spaces, a high-end indoor banquet hall, and high-capacity accommodations to host and house your guests comfortably.
             </p>
@@ -173,7 +173,7 @@ export default function SpacesPage({ navigate }: SpacesPageProps) {
                     <h3 style={{
                       fontFamily: "'Playfair Display', serif",
                       fontStyle: 'italic',
-                      fontSize: '2.4rem',
+                      fontSize: 'clamp(1.8rem, 5vw, 2.4rem)',
                       marginTop: '8px',
                       marginBottom: '20px',
                     }}>
@@ -250,7 +250,7 @@ export default function SpacesPage({ navigate }: SpacesPageProps) {
               <h2 style={{
                 fontFamily: "'Playfair Display', serif",
                 fontStyle: 'italic',
-                fontSize: '2.8rem',
+                fontSize: 'clamp(2rem, 5.5vw, 2.8rem)',
                 margin: 0,
               }}>
                 Stay at Kayal

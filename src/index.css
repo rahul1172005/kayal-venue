@@ -62,3 +62,34 @@ button {
 ::-webkit-scrollbar-thumb { background: #000000; border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: #333333; }
 
+/* ===== Responsive / Mobile refinements ===== */
+
+/* Avoid layout shift / horizontal scroll from oversized media */
+img, video, iframe {
+  max-width: 100%;
+}
+
+/* Smooth momentum scrolling for horizontal sliders on iOS */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent iOS Safari from auto-zooming when a form field is focused.
+   iOS zooms whenever the focused input font-size is below 16px. */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* background-attachment: fixed is broken / janky on iOS Safari and most
+   touch devices (the image jumps or appears zoomed). Components opt in by
+   adding the .bg-parallax class; we fall back to a normal scroll image. */
+@media (max-width: 1024px) {
+  .bg-parallax {
+    background-attachment: scroll !important;
+  }
+}
+

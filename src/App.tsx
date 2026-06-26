@@ -26,13 +26,14 @@ function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       title="Chat on WhatsApp"
+      className="wa-float"
       style={{
         position: 'fixed', bottom: '32px', right: '32px',
         width: '60px', height: '60px', borderRadius: '50%',
         background: 'linear-gradient(135deg, #25d366, #128C7E)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         boxShadow: '0 6px 24px rgba(37,211,102,0.45)',
-        zIndex: 999, color: '#fff', fontSize: '28px',
+        zIndex: 990, color: '#fff', fontSize: '28px',
         textDecoration: 'none',
         transition: 'transform 0.3s ease, box-shadow 0.3s ease',
         animation: 'waPulse 3s ease-in-out infinite',
@@ -52,6 +53,15 @@ function WhatsAppButton() {
           0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
           50% { box-shadow: 0 6px 40px rgba(37,211,102,0.7); }
         }
+        @media (max-width: 600px) {
+          .wa-float {
+            bottom: 18px !important;
+            right: 18px !important;
+            width: 52px !important;
+            height: 52px !important;
+            font-size: 24px !important;
+          }
+        }
       `}</style>
     </a>
   )
@@ -66,7 +76,7 @@ function CTABanner() {
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       textAlign: 'center', overflow: 'hidden',
     }}>
-      <div style={{
+      <div className="bg-parallax" style={{
         position: 'absolute', inset: 0,
         backgroundImage: `url('/scrroll.jpg')`,
         backgroundSize: 'cover', backgroundPosition: 'center',

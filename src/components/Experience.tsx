@@ -12,7 +12,7 @@ export default function Experience() {
       overflow: 'hidden',
     }}>
       {/* Background */}
-      <div style={{
+      <div className="bg-parallax" style={{
         position: 'absolute', inset: 0,
         backgroundImage: `url('/kayal_gallery_collage_1777884529832.png')`,
         backgroundSize: 'cover',

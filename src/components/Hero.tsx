@@ -170,6 +170,11 @@ export default function Hero() {
           0%, 100% { transform: translateX(-50%) translateY(0); }
           50%       { transform: translateX(-50%) translateY(-9px); }
         }
+        @media (max-width: 992px) {
+          #home h1 {
+            transform: scale(1.15) translateX(0px) translateY(0px) !important;
+          }
+        }
         @media (max-width: 768px) {
           #home h1 {
             transform: scale(1.0) translateX(0px) translateY(0px) !important;

@@ -339,7 +339,7 @@ export default function Spaces() {
                   justifyContent: 'flex-end',
                   transition: 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)',
                 }}>
-                  <div style={{
+                  <div className="space-card-head" style={{
                     transform: hovered === space.id ? 'translateY(0)' : 'translateY(20px)',
                     transition: 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)',
                   }}>
@@ -364,12 +364,12 @@ export default function Spaces() {
                     </h3>
                   </div>
 
-                  <div style={{
+                  <div className="space-card-collapse" style={{
                     display: 'grid',
                     gridTemplateRows: hovered === space.id ? '1fr' : '0fr',
                     transition: 'grid-template-rows 0.5s cubic-bezier(0.25, 1, 0.5, 1)',
                   }}>
-                    <div style={{
+                    <div className="space-card-body" style={{
                       overflow: 'hidden',
                       opacity: hovered === space.id ? 1 : 0,
                       transition: 'opacity 0.4s ease 0.1s',
@@ -481,9 +481,28 @@ export default function Spaces() {
         </div>
       )}
       <style>{`
+        /* On touch devices there is no hover, so reveal each space card's
+           full details (description + capacity/area) by default. */
+        @media (hover: none), (max-width: 992px) {
+          .space-card-head {
+            transform: translateY(0) !important;
+          }
+          .space-card-head h3 {
+            margin-bottom: 16px !important;
+          }
+          .space-card-collapse {
+            grid-template-rows: 1fr !important;
+          }
+          .space-card-body {
+            opacity: 1 !important;
+          }
+          .space-card {
+            height: 540px !important;
+          }
+        }
         @media (max-width: 600px) {
           .space-card {
-            height: 420px !important;
+            height: 500px !important;
           }
         }
       `}</style>

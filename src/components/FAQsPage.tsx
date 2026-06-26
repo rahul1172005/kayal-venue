@@ -326,9 +326,9 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
                     </button>
 
                     <div style={{
-                      maxHeight: isExpanded ? '1000px' : '0px',
+                      maxHeight: isExpanded ? '3000px' : '0px',
                       overflow: 'hidden',
-                      transition: 'all 0.4s cubic-bezier(0.25, 1, 0.5, 1)',
+                      transition: 'all 0.5s cubic-bezier(0.25, 1, 0.5, 1)',
                       opacity: isExpanded ? 1 : 0,
                     }}>
                       <div style={{

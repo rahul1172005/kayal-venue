@@ -61,7 +61,9 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
     return false
   }
 
-  const isWhiteBgNavbar = scrolled || currentPath !== '/'
+  // When the mobile menu is open the overlay is white, so force dark text
+  // for the logo and the close (X) icon so they stay visible.
+  const isWhiteBgNavbar = scrolled || currentPath !== '/' || mobileOpen
   const navTextColor = isWhiteBgNavbar ? '#000000' : '#ffffff'
 
   return (
@@ -212,7 +214,7 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
         .nav-quick-contacts {
           display: none !important;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           .nav-desktop { display: none !important; }
           .nav-cta { display: none !important; }
           .nav-hamburger { display: block !important; }

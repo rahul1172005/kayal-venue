@@ -133,7 +133,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <Reveal>
               <span style={{ color: brandGold, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.75rem', fontFamily: "'Inter', sans-serif", fontWeight: 600 }}>Weddings & Receptions</span>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '2.6rem', marginTop: '12px' }}>Curated Venue Packages</h2>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(2rem, 5.5vw, 2.6rem)', marginTop: '12px' }}>Curated Venue Packages</h2>
               <div style={{ width: '50px', height: '1px', background: brandGold, margin: '20px auto 0' }} />
             </Reveal>
           </div>
@@ -306,7 +306,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <Reveal>
               <span style={{ color: brandGold, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '0.75rem', fontFamily: "'Inter', sans-serif", fontWeight: 600 }}>Versatility & Scope</span>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '2.6rem', marginTop: '12px' }}>Other Custom Events</h2>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(2rem, 5.5vw, 2.6rem)', marginTop: '12px' }}>Other Custom Events</h2>
               <div style={{ width: '50px', height: '1px', background: brandGold, margin: '20px auto 0' }} />
             </Reveal>
           </div>
