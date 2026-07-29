@@ -31,7 +31,7 @@ const spaces = [
     desc: 'A versatile space featuring an open lawn that is boardered by vines and betel nut trees. It has a raised stage and a covered space for buffet set-up.',
     img: '/nila.jpg',
     capacity: 'Up to 1000 Guests',
-    area: '50,000 sq.ft',
+    area: '10,000 sq.ft',
   },
   {
     id: 'vizhi',
@@ -40,16 +40,16 @@ const spaces = [
     desc: 'An air-conditioned intimate space that can be hired for pre-wedding rituals, birthday celebrations, baby showers, naming ceremonies, wellness and corporate events, to name a few.',
     img: '/vizhi.jpg',
     capacity: 'Up to 200 Guests',
-    area: '18,000 sq.ft',
+    area: '4,500 sq.ft',
   },
   {
     id: 'isai',
     name: 'Kayal Isai',
     subtitle: 'Performance Space',
-    desc: 'A 3-bedroom house that can be used by the bride, groom and their families. In addition, our other accommodation (Kayal Aruvi) can host 8 guests in two bedrooms. All rooms are air-conditioned with attached bathrooms.',
+    desc: 'Kayal Isai is a three bedroom house that can be used by the bride, groom and their families. One of the rooms has a mezzanine floor, providing two sleeping areas within the same room. Kayal Isai can accommodate 16 guests. In addition, Kayal Aruvi can accommodate 8 guests. All rooms are air conditioned with attached bathrooms.',
     img: '/isai.jpg',
     capacity: 'Up to 24 Guests',
-    area: '8,000 sq.ft',
+    area: 'Around 2,500–3,000 sq.ft',
   },
 ]
 

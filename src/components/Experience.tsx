@@ -14,7 +14,7 @@ export default function Experience() {
       {/* Background */}
       <div className="bg-parallax" style={{
         position: 'absolute', inset: 0,
-        backgroundImage: `url('/kayal_gallery_collage_1777884529832.png')`,
+        backgroundImage: `url('/_TAR0360.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -43,7 +43,7 @@ export default function Experience() {
           color: '#000000', fontStyle: 'italic',
           lineHeight: 1.3, marginBottom: '20px',
         }}>
-          "Every moment here is crafted<span className="desktop-br"><br /></span>with perfection"
+          "Every moment here is crafted <span className="desktop-br"><br /></span>with perfection"
         </h2>
 
 

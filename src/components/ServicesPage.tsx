@@ -57,8 +57,8 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
       category: 'Private Parties',
       icon: <Calendar size={36} strokeWidth={1.5} />,
       items: [
-        { title: 'Birthday Parties', desc: 'A perfect ambient background for birthday celebrations. Choose a space configuration based on your guest count.' },
-        { title: 'Family Get-Togethers', desc: 'Be it an intimate family gathering, baby shower, naming ceremony, or school reunion, we make it memorable.' },
+        { title: 'Celebrations & Ceremonies', desc: 'Birthdays, anniversaries, baby shower, seer function, ear piercing ceremony, and puberty celebration — all events in style with curated decor, cuisine, and entertainment.' },
+        { title: 'Family Get-Togethers', desc: 'Be it an intimate family gathering, milestone celebration, or reunion, we provide an idyllic backdrop for unforgettable memories.' },
       ],
     },
     {

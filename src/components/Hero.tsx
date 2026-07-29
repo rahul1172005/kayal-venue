@@ -1,11 +1,14 @@
-import React from 'react'
-
+import React, { useEffect, useRef } from 'react'
 
 export default function Hero() {
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-  }
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true
+      videoRef.current.play().catch(() => {})
+    }
+  }, [])
 
   return (
     <section
@@ -22,6 +25,7 @@ export default function Hero() {
     >
       {/* ── Background Video ── */}
       <video
+        ref={videoRef}
         autoPlay
         loop
         muted
@@ -73,32 +77,17 @@ export default function Hero() {
           padding: '0 20px',
         }}
       >
-        <p
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '0.78rem',
-            fontWeight: 400,
-            textTransform: 'uppercase',
-            letterSpacing: '6px',
-            color: '#ffffff',
-            marginBottom: '4px',
-            animation: 'fadeUp 1s ease 0.2s both',
-          }}
-        >
-          Welcome to
-        </p>
-
         <h1
           style={{
             fontFamily: "'Playfair Display', serif",
             fontStyle: 'italic',
-            fontSize: 'clamp(3rem, 8vw, 5.5rem)',
-            color: '#ffffff',
+            fontSize: 'clamp(3.5rem, 10vw, 6.5rem)',
+            color: '#B4914F',
             lineHeight: 1.05,
-            marginBottom: '12px',
-            animation: 'fadeUp 1s ease 0.4s both',
-            transform: 'scale(1.5) translateX(40px) translateY(-10px)',
-            transition: 'transform 0.6s ease',
+            marginBottom: '16px',
+            animation: 'fadeUp 1s ease 0.2s both',
+            fontWeight: 700,
+            textShadow: '0 4px 20px rgba(0,0,0,0.5)',
           }}
         >
           Kayal
@@ -108,57 +97,16 @@ export default function Hero() {
           style={{
             fontFamily: "'Playfair Display', serif",
             fontStyle: 'italic',
-            fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
+            fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
             color: '#ffffff',
-            marginBottom: '24px',
-            marginTop: '10px', // Move just the subtitle and buttons down
-            animation: 'fadeUp 1s ease 0.6s both',
+            marginBottom: '0px',
+            marginTop: '10px',
+            animation: 'fadeUp 1s ease 0.4s both',
+            letterSpacing: '0.5px',
           }}
         >
           Your dream wedding deserves a dreamy setting.
         </p>
-
-        <div
-          style={{
-            display: 'flex',
-            gap: '20px',
-            justifyContent: 'center',
-            flexWrap: 'wrap',
-            animation: 'fadeUp 1s ease 0.8s both',
-          }}
-        >
-          <a
-            href="tel:+919443164565"
-            style={{
-              display: 'inline-block',
-              padding: '16px 48px',
-              background: '#B4914F',
-              color: '#ffffff',
-              border: '1px solid #B4914F',
-              borderRadius: '30px',
-              cursor: 'pointer',
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '0.82rem',
-              fontWeight: 500,
-              letterSpacing: '2px',
-              textTransform: 'uppercase',
-              textDecoration: 'none',
-              transition: 'all 0.35s ease',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.background = '#ffffff'
-              e.currentTarget.style.color = '#B4914F'
-              e.currentTarget.style.borderColor = '#ffffff'
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.background = '#B4914F'
-              e.currentTarget.style.color = '#ffffff'
-              e.currentTarget.style.borderColor = '#B4914F'
-            }}
-          >
-            Call Now
-          </a>
-        </div>
       </div>
 
       <style>{`
@@ -166,18 +114,9 @@ export default function Hero() {
           from { opacity: 0; transform: translateY(30px); }
           to   { opacity: 1; transform: translateY(0); }
         }
-        @keyframes bounce {
-          0%, 100% { transform: translateX(-50%) translateY(0); }
-          50%       { transform: translateX(-50%) translateY(-9px); }
-        }
-        @media (max-width: 992px) {
-          #home h1 {
-            transform: scale(1.15) translateX(0px) translateY(0px) !important;
-          }
-        }
         @media (max-width: 768px) {
           #home h1 {
-            transform: scale(1.0) translateX(0px) translateY(0px) !important;
+            font-size: clamp(3rem, 12vw, 4.5rem) !important;
           }
         }
       `}</style>

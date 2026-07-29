@@ -4,16 +4,16 @@ import { X } from 'lucide-react'
 
 const galleryImages = [
   {
-    src: '/_TAR0360.jpg',
-    title: 'The Nila Lawn',
-    desc: 'Sprawling greenery under a starlit canopy.',
+    src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (9).jpeg',
+    title: 'The Nila Lawn Canopy',
+    desc: 'Grand celebration under transparent canopy tent.',
     colSpan: 'span 2',
     rowSpan: 'span 2'
   },
   {
-    src: '/_TAR0369.jpg',
-    title: 'Cinematic Vista',
-    desc: 'A breathtaking aerial perspective of our oasis.',
+    src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (8).jpeg',
+    title: 'Illuminated Stage',
+    desc: 'The complete decorated stage in full grandeur.',
     colSpan: 'span 2',
     rowSpan: 'span 1'
   },
@@ -39,9 +39,9 @@ const galleryImages = [
     rowSpan: 'span 1'
   },
   {
-    src: '/_TAR0363.jpg',
-    title: 'The Isai Space',
-    desc: 'Where melodies echo through the soul.',
+    src: '/isai.jpg',
+    title: 'The Isai Estate',
+    desc: 'Picturesque surroundings and serene architecture.',
     colSpan: 'span 2',
     rowSpan: 'span 1'
   },

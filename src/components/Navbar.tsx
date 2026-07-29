@@ -63,6 +63,7 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
 
   // When the mobile menu is open the overlay is white, so force dark text
   // for the logo and the close (X) icon so they stay visible.
+  const showNav = scrolled || currentPath !== '/' || mobileOpen
   const isWhiteBgNavbar = scrolled || currentPath !== '/' || mobileOpen
   const navTextColor = isWhiteBgNavbar ? '#000000' : '#ffffff'
 
@@ -74,6 +75,9 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         background: scrolled ? '#ffffff' : 'transparent',
         boxShadow: scrolled ? '0 2px 20px rgba(0,0,0,0.08)' : 'none',
+        opacity: showNav ? 1 : 0,
+        pointerEvents: showNav ? 'auto' : 'none',
+        transform: showNav ? 'translateY(0)' : 'translateY(-20px)',
         transition: 'all 0.4s ease',
       }}>
         <div style={{
