@@ -20,6 +20,7 @@ const vizhiItems: GalleryItem[] = [
   { type: 'image', src: '/Kayal Vizhi ( Hall )/WhatsApp Image 2026-06-10 at 4.28.34 PM.jpeg' },
   { type: 'image', src: '/Kayal Vizhi ( Hall )/WhatsApp Image 2026-06-10 at 4.28.35 PM (1).jpeg' },
   { type: 'image', src: '/Kayal Vizhi ( Hall )/WhatsApp Image 2026-06-10 at 4.28.35 PM.jpeg' },
+  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (16).jpeg' },
 ]
 
 const birthdayItems: GalleryItem[] = [
@@ -44,26 +45,25 @@ const birthdayItems: GalleryItem[] = [
 ]
 
 const nilaItems: GalleryItem[] = [
+  // 1. First photo retained as requested
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.00 PM.jpeg' },
+  // 2, 3, 4, 5: Promoted transparent tent & high-impact event photos
+  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (9).jpeg' },
+  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (8).jpeg' },
+  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (6).jpeg' },
+  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (18).jpeg' },
+  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (19).jpeg' },
+  // Remaining Nila photos
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (1).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (2).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (3).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (4).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (5).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (6).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (7).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (8).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (9).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (10).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (11).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (12).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (13).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (14).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (15).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (16).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (17).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (18).jpeg' },
-  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (19).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM.jpeg' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.00 PM.mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (1).mp4' },
@@ -333,24 +333,24 @@ export default function GalleryPage({ navigate }: GalleryPageProps) {
           
           <Reveal delay={0.1}>
             <GallerySlider 
-              title="Kayal Vizhi (indoor space)" 
-              items={vizhiItems} 
+              title="Kayal Nila (open door space)" 
+              items={nilaItems} 
               onItemClick={(item) => setLightbox(item)} 
             />
           </Reveal>
 
           <Reveal delay={0.2}>
             <GallerySlider 
-              title="Birthday events" 
-              items={birthdayItems} 
+              title="Kayal Vizhi (indoor space)" 
+              items={vizhiItems} 
               onItemClick={(item) => setLightbox(item)} 
             />
           </Reveal>
 
           <Reveal delay={0.3}>
             <GallerySlider 
-              title="Kayal Nila (open door space)" 
-              items={nilaItems} 
+              title="Birthday events" 
+              items={birthdayItems} 
               onItemClick={(item) => setLightbox(item)} 
             />
           </Reveal>

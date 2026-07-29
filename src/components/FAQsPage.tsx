@@ -122,9 +122,7 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
       a: (
         <div>
           <p style={{ marginBottom: '12px' }}>Yes. The venue is equipped with a generator backup system featuring automatic changeover.</p>
-          <p style={{ marginBottom: '12px' }}>In the event of a power outage, the generator automatically takes over, helping ensure that venue lighting, stage lighting, sound systems, and other essential event facilities continue operating with minimal disruption.</p>
-          <p style={{ marginBottom: '12px' }}>Electricity consumption is charged based on actual usage. Meter readings are recorded before and after the event, and charges are calculated according to the prevailing electricity board rate.</p>
-          <p>If generator power is used, generator charges are similarly calculated based on actual consumption and billed accordingly. This ensures that clients pay only for the electricity and backup power actually used during their event.</p>
+          <p>In the event of a power outage, the generator automatically takes over, helping ensure that venue lighting, stage lighting, sound systems, and other essential event facilities continue operating with minimal disruption.</p>
         </div>
       )
     },

@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Reveal from './Reveal'
 
 export default function About() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true
+      videoRef.current.play().catch(() => {})
+    }
+  }, [])
+
   return (
     <section id="about" style={{
       background: '#ffffff',
@@ -46,6 +55,7 @@ export default function About() {
             background: '#000000',
           }}>
             <video
+              ref={videoRef}
               src="/video1.mp4"
               autoPlay
               muted
@@ -56,6 +66,7 @@ export default function About() {
                 height: 'auto',
                 display: 'block',
                 objectFit: 'cover',
+                filter: 'saturate(1.25) hue-rotate(-5deg) contrast(1.05)',
               }}
             />
           </div>

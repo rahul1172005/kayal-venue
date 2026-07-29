@@ -149,6 +149,9 @@ export default function Footer({ navigate }: FooterProps) {
                 <a href="tel:+919443164565" style={{ color: '#1a1a1a', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = '#B4914F'} onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}>
                   <Phone size={16} style={{ color: '#B4914F' }} /> +91 94431 64565
                 </a>
+                <a href="tel:+919003927793" style={{ color: '#1a1a1a', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = '#B4914F'} onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}>
+                  <Phone size={16} style={{ color: '#B4914F' }} /> +91 90039 27793
+                </a>
                 <a href="mailto:connectwithkayal@gmail.com" style={{ color: '#1a1a1a', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = '#B4914F'} onMouseLeave={e => e.currentTarget.style.color = '#1a1a1a'}>
                   <Mail size={16} style={{ color: '#B4914F' }} /> connectwithkayal@gmail.com
                 </a>

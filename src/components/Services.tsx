@@ -11,7 +11,7 @@ const services = [
   {
     icon: <PartyPopper size={48} strokeWidth={1} />,
     title: 'Private Parties',
-    desc: 'Birthdays, anniversaries, and milestone moments — celebrated in style with curated decor, cuisine, and entertainment.',
+    desc: 'Birthdays, anniversaries, baby shower, seer function, ear piercing ceremony, and puberty celebration — all events in style with curated decor, cuisine, and entertainment.',
   },
   {
     icon: <Briefcase size={48} strokeWidth={1} />,

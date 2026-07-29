@@ -90,7 +90,7 @@ export default function Contact({ navigate }: ContactProps) {
               color: '#1a1a1a', marginBottom: '24px',
               fontWeight: 400
             }}>
-              Let’s Craft Your <span style={{ fontStyle: 'italic' }}>Legend</span>
+              Let’s Craft Your <span style={{ fontStyle: 'italic' }}>Story</span>
             </h2>
             <div style={{ width: '60px', height: '2px', background: '#B4914F', margin: '0 auto 24px' }} />
             <p style={{
@@ -131,9 +131,27 @@ export default function Contact({ navigate }: ContactProps) {
                     </>
                   ) as React.ReactNode
                 },
-                { icon: <Phone size={20} />, label: 'Inquiries', val: '+91 94431 64565' as React.ReactNode },
+                {
+                  icon: <Phone size={20} />,
+                  label: 'Inquiries',
+                  val: (
+                    <>
+                      +91 94431 64565<br />
+                      +91 90039 27793
+                    </>
+                  ) as React.ReactNode
+                },
                 { icon: <Mail size={20} />, label: 'Email', val: 'connectwithkayal@gmail.com' as React.ReactNode },
-                { icon: <Clock size={20} />, label: 'Availability', val: 'Daily: 9:00 AM – 6:00 PM' as React.ReactNode },
+                {
+                  icon: <Clock size={20} />,
+                  label: 'Availability / Visit Us',
+                  val: (
+                    <>
+                      <strong>Venue visiting hours:</strong> 9:00 AM – 9:00 PM<br />
+                      <strong>Office hours:</strong> 9:00 AM – 1:00 PM & 3:00 PM – 6:00 PM
+                    </>
+                  ) as React.ReactNode
+                },
               ].map(item => (
                 <div key={item.label} style={{
                   display: 'flex', gap: '24px', marginBottom: '32px',
