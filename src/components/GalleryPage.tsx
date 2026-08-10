@@ -7,7 +7,7 @@ interface GalleryPageProps {
 }
 
 interface GalleryItem {
-  type: 'image' | 'video'
+  type: 'image' | 'video' | 'drive-video'
   src: string
 }
 
@@ -73,6 +73,7 @@ const nilaItems: GalleryItem[] = [
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (5).mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (6).mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM.mp4' },
+  { type: 'drive-video', src: 'https://drive.google.com/file/d/1zyqfrBUuym3xf3MOp5HJWc-ubTy4DZdk/preview' },
 ]
 
 interface SliderProps {
@@ -221,6 +222,19 @@ function GallerySlider({ title, items, onItemClick }: SliderProps) {
                   objectFit: 'cover'
                 }}
               />
+            ) : item.type === 'drive-video' ? (
+              <div style={{ width: '100%', height: '100%', position: 'relative', pointerEvents: 'none' }}>
+                <iframe
+                  src={item.src}
+                  allow="autoplay"
+                  style={{ width: '100%', height: '100%', border: 'none' }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background: 'rgba(0,0,0,0.15)',
+                }} />
+              </div>
             ) : (
               <div style={{ width: '100%', height: '100%', position: 'relative' }}>
                 <video
@@ -332,9 +346,9 @@ export default function GalleryPage({ navigate }: GalleryPageProps) {
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           
           <Reveal delay={0.1}>
-            <GallerySlider 
-              title="Kayal Nila (open door space)" 
-              items={nilaItems} 
+            <GallerySlider
+              title="Kayal Nila (outdoor lawn)"
+              items={nilaItems}
               onItemClick={(item) => setLightbox(item)} 
             />
           </Reveal>
@@ -380,6 +394,18 @@ export default function GalleryPage({ navigate }: GalleryPageProps) {
                   objectFit: 'contain', borderRadius: '12px',
                   boxShadow: '0 0 100px rgba(180, 145, 79, 0.2)',
                   cursor: 'default',
+                }}
+              />
+            ) : lightbox.type === 'drive-video' ? (
+              <iframe
+                src={lightbox.src}
+                allow="autoplay"
+                style={{
+                  width: '90vw', height: '80vh',
+                  maxWidth: '1000px',
+                  border: 'none', borderRadius: '12px',
+                  boxShadow: '0 0 100px rgba(180, 145, 79, 0.2)',
+                  background: '#000000'
                 }}
               />
             ) : (

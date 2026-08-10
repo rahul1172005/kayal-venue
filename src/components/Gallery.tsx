@@ -18,7 +18,7 @@ const galleryImages = [
     rowSpan: 'span 1'
   },
   {
-    src: '/image2.jpg',
+    src: '/vizhi.jpg',
     title: 'The Vizhi Hall',
     desc: 'Modern luxury meets timeless tradition.',
     colSpan: 'span 1',

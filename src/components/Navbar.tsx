@@ -92,7 +92,7 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
           alignItems: 'center',
           gap: '8px'
         }} onClick={() => navigate('/')}>
-          KAYAL VENUE
+          KAYAL
         </div>
 
         {/* Desktop links */}

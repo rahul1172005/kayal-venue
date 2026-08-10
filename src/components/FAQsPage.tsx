@@ -111,8 +111,7 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
             <li>Pre-event venue cleaning, post-event cleaning, garbage collection, and waste disposal</li>
             <li>General venue maintenance during the event period</li>
           </ul>
-          <p style={{ marginBottom: '12px' }}>The dining hall can comfortably accommodate approximately 120 guests at a time for buffet or traditional dining service.</p>
-          <p style={{ marginBottom: '12px' }}>To ensure a smooth handover, a refundable security deposit is collected prior to the event. Following the function, the venue is inspected for any damage, loss of property, or additional cleaning requirements, and the balance amount of the deposit is refunded accordingly.</p>
+          <p style={{ marginBottom: '12px' }}>The dining hall can comfortably accommodate approximately 120 guests at a time for buffet or for traditional leaf-service dining.</p>
           <p>Optional weather-protection solutions such as German Tents, Ceiling Tents, or Arabian Tents can be arranged at an additional cost if required.</p>
         </div>
       )
@@ -164,7 +163,7 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
       q: 'Is there a kitchen or prep area for caterers?',
       a: (
         <div>
-          <p style={{ marginBottom: '12px' }}>The venue does not have a kitchen.</p>
+          <p style={{ marginBottom: '12px' }}>The venue does not have a kitchen. Main food preparation must be done off-site by the client's caterer in their centralized kitchen.</p>
           <p style={{ marginBottom: '12px' }}>However, we do provide facilities that support catering service during events, including:</p>
           <ul style={{ paddingLeft: '20px', listStyleType: 'disc', display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '12px' }}>
             <li>A pantry area</li>
@@ -191,20 +190,20 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
       q: 'Do you have a preferred decorator or event design team?',
       a: (
         <div>
-          <p style={{ marginBottom: '12px' }}>Yes. We have an in-house event décor and design team that provides complete event solutions, from concept to execution.</p>
+          <p style={{ marginBottom: '12px' }}>Yes. We have a preferred décor and design team that provides complete event solutions, from concept to execution.</p>
           <p style={{ marginBottom: '12px' }}>Our team can assist with:</p>
           <ul style={{ paddingLeft: '20px', listStyleType: 'disc', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '6px', marginBottom: '12px' }}>
             <li>Stage design and setup</li>
             <li>Floral décor</li>
             <li>Lighting design</li>
-            <li>Entrance and walkway décor</li>
+            <li>Entrance and walkway decoration</li>
             <li>Seating layouts</li>
-            <li>Mandap and ceremony setups</li>
-            <li>Reception and themed event décor</li>
+            <li>Mandap manavarai/muhurtham stage decoration and ceremony setups</li>
+            <li>Reception and themed event decoration</li>
             <li>Tenting and weather-protection solutions</li>
             <li>Overall event styling and coordination</li>
           </ul>
-          <p>Having an in-house décor team allows for seamless planning and execution, as they are highly familiar with the venue and can recommend designs that best utilize the space.</p>
+          <p>Having a preferred décor team allows for seamless planning and execution, as they are highly familiar with the venue and can recommend designs that best utilize the space.</p>
         </div>
       )
     },
@@ -212,11 +211,19 @@ export default function FAQsPage({ navigate }: FAQsPageProps) {
       q: 'What are the venue’s music and sound guidelines?',
       a: (
         <div>
-          <p style={{ marginBottom: '12px' }}>We welcome live music, DJs, performances, and entertainment programs as part of your celebration.</p>
+          <p style={{ marginBottom: '12px' }}>We welcome live music, DJs (with licence or written permission), performances, and entertainment programs as part of your celebration.</p>
           <p style={{ marginBottom: '12px' }}>Amplified music and live performances are permitted until 9:00 PM.</p>
-          <p style={{ marginBottom: '12px' }}>After 9:00 PM, we request that the volume be significantly reduced and that only soft background or light music be played.</p>
+          <p style={{ marginBottom: '12px' }}>After 9:00 PM, we request that the DJs should be stopped and that only soft background or light music be played.</p>
           <p style={{ marginBottom: '12px' }}>These guidelines are in place because the venue is located near a residential area, and we strive to be considerate of our neighbors while still allowing our guests to enjoy their celebrations.</p>
           <p>Our team will be happy to guide your musicians, DJs, and sound providers regarding the venue’s sound requirements to ensure a smooth and uninterrupted event for everyone.</p>
+        </div>
+      )
+    },
+    {
+      q: 'When do we need to sign the venue’s rules and regulations?',
+      a: (
+        <div>
+          <p>The event organizer is required to sign our Rules &amp; Regulations document before the event. This ensures that all venue policies, safety guidelines, and operational procedures are clearly understood and agreed upon, helping the event run smoothly for everyone.</p>
         </div>
       )
     }
