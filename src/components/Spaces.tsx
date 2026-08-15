@@ -57,6 +57,33 @@ export default function Spaces() {
   const [hovered, setHovered] = useState<string | null>(null)
   const [activeVideo, setActiveVideo] = useState<string | null>(null)
 
+  // Only the video cards actually visible in the slider's viewport need to be
+  // decoding/playing at once. With the set tripled for the infinite-scroll
+  // illusion, that's up to 12 simultaneous autoplaying videos if left
+  // unmanaged — a major source of scroll jank. Pause any card once it
+  // scrolls out of view and resume it when it re-enters.
+  React.useEffect(() => {
+    const track = document.getElementById('video-scroll-track')
+    if (!track) return
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          const video = entry.target.querySelector('video')
+          if (!video) return
+          if (entry.isIntersecting) {
+            video.play().catch(() => {})
+          } else {
+            video.pause()
+          }
+        })
+      },
+      { root: track, threshold: 0.1 }
+    )
+    const cards = track.querySelectorAll('.video-slide-card')
+    cards.forEach(card => observer.observe(card))
+    return () => observer.disconnect()
+  }, [])
+
   const scroll = (direction: 'left' | 'right') => {
     const el = document.getElementById('video-scroll-track')
     if (el) {
@@ -140,6 +167,7 @@ export default function Spaces() {
               <div
                 key={`${video.id}-${idx}`}
                 onClick={() => setActiveVideo(video.url)}
+                className="video-slide-card"
                 style={{
                   flex: '0 0 280px',
                   height: '460px',
@@ -166,7 +194,7 @@ export default function Spaces() {
                   loop
                   muted
                   playsInline
-                  autoPlay
+                  preload="metadata"
                   style={{
                     width: '100%',
                     height: '100%',

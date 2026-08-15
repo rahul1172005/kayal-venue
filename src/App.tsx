@@ -76,11 +76,10 @@ function CTABanner() {
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       textAlign: 'center', overflow: 'hidden',
     }}>
-      <div className="bg-parallax" style={{
+      <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: `url('/scrroll.jpg')`,
         backgroundSize: 'cover', backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
       }} />
       <div style={{
         position: 'absolute', inset: 0,

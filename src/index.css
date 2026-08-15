@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Nightype';
+  src: url('/fonts/nightype.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg-soft: #ffffff;
   --forest-green: #000000;
@@ -84,12 +92,9 @@ img, video, iframe {
   }
 }
 
-/* background-attachment: fixed is broken / janky on iOS Safari and most
-   touch devices (the image jumps or appears zoomed). Components opt in by
-   adding the .bg-parallax class; we fall back to a normal scroll image. */
-@media (max-width: 1024px) {
-  .bg-parallax {
-    background-attachment: scroll !important;
-  }
-}
+/* background-attachment: fixed was previously used for a parallax effect on
+   the Experience and CTA sections, but it forces the browser to repaint the
+   full background image on every scroll frame, causing scroll jank/stutter
+   on both desktop and mobile. Those sections now use a plain scrolling
+   background instead. */
 

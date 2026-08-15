@@ -13,8 +13,16 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60)
-    window.addEventListener('scroll', handleScroll)
+    let ticking = false
+    const handleScroll = () => {
+      if (ticking) return
+      ticking = true
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 60)
+        ticking = false
+      })
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -80,19 +88,20 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
         transform: showNav ? 'translateY(0)' : 'translateY(-20px)',
         transition: 'all 0.4s ease',
       }}>
-        <div style={{
-          fontFamily: "'Playfair Display', serif",
-          fontSize: '1.6rem',
-          fontWeight: 700,
+        <div className="nav-logo" style={{
+          fontFamily: "'Nightype', 'Playfair Display', serif",
+          fontSize: '3.2rem',
+          fontWeight: 400,
           color: navTextColor,
           letterSpacing: '1px',
           transition: 'color 0.4s',
           cursor: 'pointer',
           display: 'flex',
           alignItems: 'center',
-          gap: '8px'
+          gap: '8px',
+          lineHeight: 1,
         }} onClick={() => navigate('/')}>
-          KAYAL
+          Kayal
         </div>
 
         {/* Desktop links */}
@@ -228,6 +237,11 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
           }
           .nav-call-img {
             transform: translate(0, 0) scale(1.6) !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .nav-logo {
+            font-size: 2.5rem !important;
           }
         }
       `}</style>

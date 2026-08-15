@@ -113,7 +113,8 @@ export default function Gallery() {
                     <img
                       src={img.src}
                       alt={img.title}
-                      loading="lazy"
+                      loading={i < 2 ? 'eager' : 'lazy'}
+                      decoding="async"
                       style={{
                         width: '100%', height: '100%', objectFit: 'cover',
                         transition: 'transform 1s cubic-bezier(0.23, 1, 0.32, 1)',

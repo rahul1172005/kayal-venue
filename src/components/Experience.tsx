@@ -12,12 +12,11 @@ export default function Experience() {
       overflow: 'hidden',
     }}>
       {/* Background */}
-      <div className="bg-parallax" style={{
+      <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: `url('/_TAR0360.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
       }} />
 
       {/* Light overlay */}

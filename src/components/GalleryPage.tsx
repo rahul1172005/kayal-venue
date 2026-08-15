@@ -44,9 +44,23 @@ const birthdayItems: GalleryItem[] = [
   { type: 'video', src: '/Birthday/WhatsApp Video 2026-06-10 at 4.29.32 PM.mp4' },
 ]
 
+const accommodationItems: GalleryItem[] = [
+  { type: 'image', src: '/Accommodation/1.jpg' },
+  { type: 'image', src: '/Accommodation/2.jpg' },
+  { type: 'image', src: '/Accommodation/3.jpg' },
+  { type: 'image', src: '/Accommodation/4.jpg' },
+  { type: 'image', src: '/Accommodation/5.jpg' },
+  { type: 'image', src: '/Accommodation/6.jpg' },
+  { type: 'image', src: '/Accommodation/7.jpg' },
+  { type: 'image', src: '/Accommodation/8.jpg' },
+  { type: 'image', src: '/Accommodation/9.jpg' },
+]
+
 const nilaItems: GalleryItem[] = [
   // 1. First photo retained as requested
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.00 PM.jpeg' },
+  { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/kayal-nila-new-1.jpg' },
+  { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/kayal-nila-new-1.mp4' },
   // 2, 3, 4, 5: Promoted transparent tent & high-impact event photos
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (9).jpeg' },
   { type: 'image', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (8).jpeg' },
@@ -362,10 +376,18 @@ export default function GalleryPage({ navigate }: GalleryPageProps) {
           </Reveal>
 
           <Reveal delay={0.3}>
-            <GallerySlider 
-              title="Birthday events" 
-              items={birthdayItems} 
-              onItemClick={(item) => setLightbox(item)} 
+            <GallerySlider
+              title="Birthday events"
+              items={birthdayItems}
+              onItemClick={(item) => setLightbox(item)}
+            />
+          </Reveal>
+
+          <Reveal delay={0.4}>
+            <GallerySlider
+              title="Accommodation"
+              items={accommodationItems}
+              onItemClick={(item) => setLightbox(item)}
             />
           </Reveal>
 
