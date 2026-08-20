@@ -58,11 +58,10 @@ export default function Footer({ navigate }: FooterProps) {
         <Reveal>
           <div style={{ marginBottom: '40px' }}>
             <h2 className="footer-brand-title" style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: 'clamp(4rem, 15vw, 8.5rem)',
-              fontWeight: 700,
-              letterSpacing: '12px',
-              textTransform: 'uppercase',
+              fontFamily: "'Nightype', 'Playfair Display', serif",
+              fontSize: 'clamp(5rem, 18vw, 10rem)',
+              fontWeight: 400,
+              letterSpacing: '1px',
               margin: 0,
               lineHeight: 1,
               color: '#1a1a1a'

@@ -4,43 +4,43 @@ import { X } from 'lucide-react'
 
 const galleryImages = [
   {
-    src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (9).jpeg',
-    title: 'The Nila Lawn Canopy',
-    desc: 'Grand celebration under transparent canopy tent.',
+    src: '/A Glimpse Into Kayal photos/WhatsApp Image 2026-08-20 at 12.14.06.jpeg',
+    title: 'The Kayal Estate',
+    desc: 'A sweeping view of the grounds in full bloom.',
     colSpan: 'span 2',
     rowSpan: 'span 2'
   },
   {
-    src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Image 2026-06-10 at 1.58.01 PM (8).jpeg',
-    title: 'Illuminated Stage',
-    desc: 'The complete decorated stage in full grandeur.',
+    src: '/A Glimpse Into Kayal photos/66d634_324e232e6a18417089e0dd16a32cce6c~mv2 (1).avif',
+    title: 'The Nila Lawn Canopy',
+    desc: 'Grand celebration under transparent canopy tent.',
     colSpan: 'span 2',
     rowSpan: 'span 1'
   },
   {
-    src: '/vizhi.jpg',
+    src: '/A Glimpse Into Kayal photos/vizhi.jpg',
     title: 'The Vizhi Hall',
     desc: 'Modern luxury meets timeless tradition.',
     colSpan: 'span 1',
     rowSpan: 'span 1'
   },
   {
-    src: '/image3.jpg',
+    src: '/A Glimpse Into Kayal photos/image3.jpg',
     title: 'Artful Details',
     desc: 'Every corner crafted with meticulous precision.',
     colSpan: 'span 1',
     rowSpan: 'span 1'
   },
   {
-    src: '/_TAR0361.jpg',
+    src: '/A Glimpse Into Kayal photos/_TAR0361.jpg',
     title: 'Ethereal Skies',
     desc: 'Dramatic clouds framing your perfect moments.',
     colSpan: 'span 2',
     rowSpan: 'span 1'
   },
   {
-    src: '/isai.jpg',
-    title: 'The Isai Estate',
+    src: '/A Glimpse Into Kayal photos/WhatsApp Image 2026-06-10 at 1.58.01 PM (5).jpeg',
+    title: 'The Nila Estate',
     desc: 'Picturesque surroundings and serene architecture.',
     colSpan: 'span 2',
     rowSpan: 'span 1'

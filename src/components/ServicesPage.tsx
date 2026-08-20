@@ -14,7 +14,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
     {
       name: 'Full Moon Package',
       tagline: 'The Ultimate Celebration',
-      desc: 'Exclusive, private hire of the entire Kayal estate: Kayal Nila (sprawling lawn), Kayal Vizhi (banquet hall), and Kayal Isai (performance amphitheatre). For grand weddings that require diverse backdrops.',
+      desc: 'Exclusive, private hire of the entire Kayal estate: Kayal Nila (sprawling lawn), Kayal Vizhi (banquet hall), and Kayal Isai (performance amphitheatre). For grand weddings and intimate engagements that require diverse backdrops.',
       includes: [
         'Complete two-acre property access',
         'Lawn capacity for up to 2000 guests',
@@ -27,7 +27,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
     {
       name: 'Half Moon Package',
       tagline: 'The Open Sky Experience',
-      desc: 'Hire of Kayal Nila (outdoor lawn) and Kayal Isai (amphitheatre). Tailored specifically for beautiful outdoor receptions, sangeeths, and wedding ceremonies under the stars.',
+      desc: 'Hire of Kayal Nila (outdoor lawn) and Kayal Isai (amphitheatre). Tailored specifically for beautiful outdoor receptions, sangeeths, and intimate engagements and other wedding ceremonies under the stars.',
       includes: [
         'Outdoor lawn & amphitheater access',
         'Lawn seating capacity of 1000',
@@ -40,7 +40,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
     {
       name: 'An Indoor Affair',
       tagline: 'Modern Elegance & Stature',
-      desc: 'Hire of Kayal Vizhi (banquet hall) and Kayal Isai (amphitheatre). Perfectly matches elegant receptions and intimate ceremonies with modern comfort and pristine acoustics.',
+      desc: 'Hire of Kayal Vizhi (banquet hall) and Kayal Isai (amphitheatre). Perfectly matches elegant receptions and intimate engagements with modern comfort and pristine acoustics.',
       includes: [
         'A/C Banquet Hall & water features',
         'Indoor capacity for up to 800 guests',
@@ -57,7 +57,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
       category: 'Private Parties',
       icon: <Calendar size={36} strokeWidth={1.5} />,
       items: [
-        { title: 'Celebrations & Ceremonies', desc: 'Birthdays, anniversaries, baby shower, seer function, ear piercing ceremony, and puberty celebration — all events in style with curated decor, cuisine, and entertainment.' },
+        { title: 'Celebrations & Ceremonies', desc: 'Pre-wedding rituals like Haldi, Sangeet, and Mehendi; Birthdays, anniversaries, baby shower; seer functions; ear-piercing ceremony; and puberty celebration — all events in style with curated decor, cuisine, and entertainment.' },
         { title: 'Family Get-Togethers', desc: 'Be it an intimate family gathering, milestone celebration, or reunion, we provide an idyllic backdrop for unforgettable memories.' },
       ],
     },

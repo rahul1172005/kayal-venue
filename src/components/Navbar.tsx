@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Phone } from 'lucide-react'
 
 const navLinks = ['Home', 'About', 'Spaces', 'Services', 'Gallery', 'FAQs', 'Contact']
 
@@ -173,18 +173,20 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
           <div className="nav-quick-contacts" style={{ gap: '25px', marginRight: '15px', alignItems: 'center' }}>
             <a href="tel:+919443164565" style={{ transition: 'all 0.3s', display: 'flex', alignItems: 'center' }} onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'} onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}>
-              <img
-                src="/call.png"
-                alt="Call"
+              <div
                 className="nav-call-img"
                 style={{
-                  width: '28px',
-                  height: '28px',
-                  objectFit: 'contain',
-                  transform: 'translate(-20px, -2px) scale(2.70)',
-                  filter: 'none',
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '50%',
+                  background: '#B4914F',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
                 }}
-              />
+              >
+                <Phone size={17} color="#ffffff" fill="#ffffff" />
+              </div>
             </a>
           </div>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="nav-hamburger" style={{
@@ -234,9 +236,6 @@ export default function Navbar({ currentPath, navigate }: NavbarProps) {
           .nav-quick-contacts {
             display: flex !important;
             margin-right: 0 !important;
-          }
-          .nav-call-img {
-            transform: translate(0, 0) scale(1.6) !important;
           }
         }
         @media (max-width: 480px) {

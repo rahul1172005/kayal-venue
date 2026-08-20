@@ -81,7 +81,7 @@ export default function About() {
             maxWidth: '800px',
             margin: '0 auto 24px',
           }}>
-            Tucked away from urban chaos and situated in a meticulously landscaped two-acre space, Kayal offers an unique ambience for special events of any sort.
+            Tucked away from urban chaos and situated in a meticulously landscaped two-acre space, Kayal offers a unique ambience, featuring a lush open lawn, for special events of any sort.
           </p>
         </Reveal>
 

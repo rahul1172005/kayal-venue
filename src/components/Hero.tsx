@@ -90,7 +90,7 @@ export default function Hero() {
           style={{
             fontFamily: "'Nightype', 'Playfair Display', serif",
             fontStyle: 'normal',
-            fontSize: 'clamp(3.8rem, 11vw, 7.3rem)',
+            fontSize: 'clamp(4.5rem, 13vw, 9rem)',
             color: '#B4914F',
             lineHeight: 1.05,
             marginBottom: '16px',
@@ -125,7 +125,7 @@ export default function Hero() {
         }
         @media (max-width: 768px) {
           #home h1 {
-            font-size: clamp(3.3rem, 13vw, 5rem) !important;
+            font-size: clamp(5rem, 22vw, 8rem) !important;
           }
         }
       `}</style>

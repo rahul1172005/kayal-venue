@@ -11,7 +11,7 @@ const services = [
   {
     icon: <PartyPopper size={48} strokeWidth={1} />,
     title: 'Private Parties',
-    desc: 'Birthdays, anniversaries, baby shower, seer function, ear piercing ceremony, and puberty celebration — all events in style with curated decor, cuisine, and entertainment.',
+    desc: 'Pre-wedding rituals like Haldi, Sangeet, and Mehendi; Birthdays, anniversaries, baby shower; seer functions; ear-piercing ceremony; and puberty celebration — all events in style with curated decor, cuisine, and entertainment.',
   },
   {
     icon: <Briefcase size={48} strokeWidth={1} />,
@@ -81,6 +81,9 @@ export default function Services() {
                   transform: hovered === i ? 'translateY(-10px)' : 'translateY(0)',
                   cursor: 'default',
                   border: `1px solid ${hovered === i ? littleBrown : '#F0EBE6'}`,
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column',
                 }}
               >
                 <div style={{ 
@@ -107,6 +110,7 @@ export default function Services() {
                   color: hovered === i ? 'rgba(255,255,255,0.9)' : '#555555',
                   fontFamily: "'Inter', sans-serif",
                   transition: 'color 0.4s',
+                  flexGrow: 1,
                 }}>
                   {svc.desc}
                 </p>
@@ -115,6 +119,7 @@ export default function Services() {
                   background: hovered === i ? '#ffffff' : littleBrown,
                   margin: '28px auto 0',
                   transition: 'background 0.4s',
+                  flexShrink: 0,
                 }} />
               </div>
             </Reveal>

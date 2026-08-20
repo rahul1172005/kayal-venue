@@ -54,6 +54,7 @@ const accommodationItems: GalleryItem[] = [
   { type: 'image', src: '/Accommodation/7.jpg' },
   { type: 'image', src: '/Accommodation/8.jpg' },
   { type: 'image', src: '/Accommodation/9.jpg' },
+  { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (4).mp4' },
 ]
 
 const nilaItems: GalleryItem[] = [
@@ -83,7 +84,6 @@ const nilaItems: GalleryItem[] = [
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (1).mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (2).mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (3).mp4' },
-  { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (4).mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (5).mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM (6).mp4' },
   { type: 'video', src: '/Kayal Nila ( Lawn - Open space )/WhatsApp Video 2026-06-10 at 1.58.01 PM.mp4' },
