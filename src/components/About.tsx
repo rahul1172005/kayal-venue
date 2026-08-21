@@ -94,7 +94,7 @@ export default function About() {
             maxWidth: '800px',
             margin: '0 auto 24px',
           }}>
-            From simple engagements to elaborate sangeeths and weddings, Kayal can play host to the rituals, colors and ceremonies that is an integral part of the rich tapestry of Indian culture.
+            From intimate engagements and grand wedding receptions to elaborate sangeeths and multi-day weddings, Kayal can play host to the rituals, colors, and ceremonies that form the rich tapestry of Indian culture.
           </p>
         </Reveal>
 
@@ -107,7 +107,7 @@ export default function About() {
             maxWidth: '800px',
             margin: '0 auto 24px',
           }}>
-            Celebrations of any kind makes our lives richer and fuller. Be it a milestone birthday, wedding anniversary, baby shower, naming ceremony or even re-affirming your vows, we are continuously inspired in creating your marvelous moments.
+            Celebrations of any kind make our lives richer and fuller. Be it a milestone birthday, wedding anniversary, baby shower, naming ceremony, or re-affirming your vows, we are continuously inspired to create your marvelous moments.
           </p>
         </Reveal>
 
